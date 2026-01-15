@@ -98,11 +98,10 @@ img {
 }
 
 figcaption {
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     color: #3B3B3B;
     text-align: center;
-    font-size: small;
 }
 
 footer {

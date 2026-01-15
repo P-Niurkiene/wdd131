@@ -38,4 +38,8 @@
     .temple {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    figcaption {
+        font-size: smaller;
+    }
 }
