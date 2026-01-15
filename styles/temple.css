@@ -8,6 +8,7 @@ body {
 h1 {
     text-align: center;
     font-weight: bolder;
+    padding: 10px;
 }
 
 nav {
@@ -35,6 +36,36 @@ nav a:hover {
     width: 100%;
 }
 
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+#menu {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #F1F7F2;
+    padding: 1rem;
+    cursor: pointer;
+    top: 0.1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: #3B3B3B;
+}
+
+#menu.show::before {
+    content: "✖";
+}
+
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -42,8 +73,8 @@ main {
 
 .temple {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 figure {
