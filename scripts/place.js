@@ -1,0 +1,23 @@
+const currentYear = new Date().getFullYear();
+document.getElementById("currentyear").textContent = currentYear;
+document.getElementById("lastModified").textContent =
+    "Last Modified: " + document.lastModified;
+
+const temperature = -11;
+const windSpeed = 13;
+
+function calculateWindChill(temp, wind) {
+    return (
+        13.12 +
+        0.6215 * temp -
+        11.37 * Math.pow(wind, 0.16) +
+        0.3965 * temp * Math.pow(wind, 0.16)
+    ).toFixed(1);
+}
+
+let windChill = "N/A";
+if (temperature <= 10 && windSpeed > 4.8) {
+    windChill = calculateWindChill(temperature, windSpeed) + " °C";
+}
+
+document.getElementById("windchill").textContent = windChill;

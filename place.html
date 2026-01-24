@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estonia</title>
+    <meta name="description" content="Cover page about Estonia to practice image responsiveness and JS elements.">
+    <meta name="author" content="Patricia Niukriene">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oldenburg&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="hero">
+            <picture>
+                <source srcset="images/tallinn-estonia-large.webp" media="(min-width: 768px)">
+                <img src="images/tallinn-estonia-small.webp" alt="Tallinn, Estonia" width="875" height="676">
+            </picture>
+            <h1>ESTONIA</h1>
+        </div>
+    </header>
+
+    <main class="overlay-content">
+        <section class="data">
+            <div class="circle">
+                <div class="data-header">
+                    <h2>Data</h2>
+                    <img src="images/estonia-flag-icon.svg" alt="Estonian Flag" class="flag-svg" height="50">
+                </div>
+                <p>Area: 45,335 km²</p>
+                <p>Population: 1,362,954 (estimate of 2026)</p>
+                <p>Language: Estonian</p>
+                <p>Currency: Euro</p>
+                <p>Time Zone: UTC+2</p>
+                <p>Calling Code: +372</p>
+                <p>Internet TLD: .ee</p>
+            </div>
+        </section>
+
+        <section class="weather">
+            <div class="circle">
+                <div class="weather-header">
+                    <h2>Weather</h2>
+                    <img src="images/weather-svgrepo-com.svg" alt="Weather Icon" class="weather-svg" height="50">
+                </div>
+                <p>Temperature: -11 °C</p>
+                <p>Conditions: Light Snow</p>
+                <p>Wind: 13 km/h</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Patricia Niukriene | Lithuania</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
