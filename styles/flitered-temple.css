@@ -1,0 +1,101 @@
+body {
+    background-color: #F1F7F2;
+    color: #3B3B3B;
+    font-family: "PT Serif", serif;
+    margin: 0;
+}
+
+.site-title {
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+nav {
+    background-color: #3B3B3B;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: #F1F7F2;
+    text-align: center;
+    font-size: larger;
+    padding: 1rem;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #000;
+    width: 100%;
+}
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+#menu {
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #F1F7F2;
+    padding: 1rem;
+    cursor: pointer;
+    top: 0.5rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+    color: #3B3B3B;
+}
+
+#menu.show::before {
+    content: "✖";
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+#temple-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-self: center;
+}
+
+.temple-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    box-shadow: 0 4px 8px #3B3B3B;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #3B3B3B;
+    color: #F1F7F2;
+    padding: 1rem;
+    margin-top: 1rem;
+}

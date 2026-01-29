@@ -1,0 +1,48 @@
+@media (min-width: 740px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        background-color: #3B3B3B;
+        color: #F1F7F2;
+        padding-left: 200px;
+    }
+
+    header .site-title {
+        margin: 0;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        margin-left: 1rem;
+    }
+
+    nav a {
+        padding: 1rem;
+    }
+
+    #temple-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .temple-card {
+        border: 1px solid #ccc;
+        padding: 1rem;
+    }
+}
