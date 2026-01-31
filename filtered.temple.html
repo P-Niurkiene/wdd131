@@ -4,18 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Temple Photo Album</title>
-
-    <meta name="description"
-        content="To demonstrate responsiveness of the page size, as well as create a hamburger button.">
+    <title>Filtered Temple Album</title>
+    <meta name="description" content="A photo album of LDS temples. Filter by Old, New, Large, Small, or view all.">
     <meta name="author" content="Patricia Niurkiene">
 
     <link rel="stylesheet" href="styles/flitered-temple.css">
-    <link rel="stylesheet" href="styles/filtered-temple-large.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&display=swap"
         rel="stylesheet">
@@ -23,40 +19,31 @@
     <script src="scripts/filtered.temple.js" defer></script>
 </head>
 
-
 <body>
     <header>
         <p class="site-title">Temple Album</p>
-
-        <button id="menu" aria-label="Menu"></button>
+        <button id="menu" aria-label="Menu">☰</button>
 
         <nav class="navigation">
-
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Old</a></li>
-                <li><a href="#">New</a></li>
-                <li><a href="#">Large</a></li>
-                <li><a href="#">Small</a></li>
+                <li><button id="home">Home</button></li>
+                <li><button id="old">Old</button></li>
+                <li><button id="new">New</button></li>
+                <li><button id="large">Large</button></li>
+                <li><button id="small">Small</button></li>
             </ul>
         </nav>
-
     </header>
+
     <main>
-        <h1>Home</h1>
-        <section id="temple-cards">
-
-        </section>
-
+        <h1>Temples</h1>
+        <section id="temple-cards" aria-live="polite"></section>
     </main>
+
     <footer>
-        <p>
-            &copy; <span id="currentyear"></span> | Patricia Niurkiene | Lithuania
-        </p>
+        <p>&copy; <span id="currentyear"></span> | Patricia Niurkiene | Lithuania</p>
         <p id="lastModified"></p>
-
     </footer>
-
 </body>
 
 </html>

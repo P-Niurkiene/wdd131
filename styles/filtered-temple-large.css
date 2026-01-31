@@ -37,12 +37,21 @@
 
     #temple-cards {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin: 0 auto;
+        max-width: 1200px;
     }
 
     .temple-card {
         border: 1px solid #ccc;
         padding: 1rem;
     }
+
+    .temple-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
 }
