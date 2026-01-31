@@ -29,6 +29,10 @@ header {
     color: #F1F7F2;
 }
 
+nav {
+    min-height: 56px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -63,6 +67,25 @@ nav button:hover {
 
 .navigation.show {
     display: block;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    line-height: 1;
+    font-family: inherit;
+    font-size: larger;
+    padding: 1rem;
+    text-decoration: none;
+    color: #F1F7F2;
+}
+
+
+nav a:hover {
+    background-color: white;
+    color: #000;
 }
 
 main {
@@ -115,6 +138,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-left: 12rem;
     }
 
     #menu {
