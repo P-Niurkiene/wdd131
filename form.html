@@ -5,63 +5,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Review Form</title>
-    <meta name="description" content="To practice creating forms with well desgined layouts">
+    <meta name="description" content="To practice creating forms with well-designed layouts">
     <meta name="author" content="Patricia Niurkiene">
     <script src="scripts/form.js" defer></script>
     <link href="styles/form.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oldenburg&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&display=swap"
-        rel="stylesheet">
-
 </head>
 
 <body>
     <header>
         <h1>Product Review</h1>
     </header>
+
     <main>
         <form method="get" action="review.html">
-            <label>Select Product* <select name="products" required>
-
-                </select>
-            </label>
+            <label for="product">Select Product*</label>
+            <select id="product" name="products" required>
+                <option value="" disabled selected>Select a Product …</option>
+            </select>
 
             <fieldset>
                 <legend>Overall Rating*</legend>
-                <label><input type="radio" name="rating" value="one" required>☆</label>
-                <label><input type="radio" name="rating" value="two" required>☆☆</label>
-                <label><input type="radio" name="rating" value="three" required>☆☆☆</label>
-                <label><input type="radio" name="rating" value="four" required>☆☆☆☆</label>
-                <label><input type="radio" name="rating" value="five" required>☆☆☆☆☆</label>
+                <input type="radio" id="rating1" name="rating" value="one" required>
+                <label for="rating1">☆</label>
+                <input type="radio" id="rating2" name="rating" value="two" required>
+                <label for="rating2">☆☆</label>
+                <input type="radio" id="rating3" name="rating" value="three" required>
+                <label for="rating3">☆☆☆</label>
+                <input type="radio" id="rating4" name="rating" value="four" required>
+                <label for="rating4">☆☆☆☆</label>
+                <input type="radio" id="rating5" name="rating" value="five" required>
+                <label for="rating5">☆☆☆☆☆</label>
             </fieldset>
 
-            <label>Date of Installation*<input type="date" name="date" required></label>
+            <label for="date">Date of Installation*</label>
+            <input type="date" id="date" name="date" required>
 
             <fieldset>
                 <legend>Useful Features</legend>
-                <label><input type="checkbox" name="design">Design</label>
-                <label><input type="checkbox" name="durability">Durability</label>
-                <label><input type="checkbox" name="easy">Easy To Use</label>
-                <label><input type="checkbox" name="prefomance">Preformance</label>
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" id="easy" name="features" value="easy">
+                <label for="easy">Easy To Use</label>
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
             </fieldset>
 
-            <label>Write Review<textarea name="review" id=""></textarea></label>
+            <label for="review">Write Review</label>
+            <textarea id="review" name="review" placeholder="Share your thoughts..."></textarea>
 
-
-            <label>Name<input type="text" name="name"></label>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Optional">
 
             <input type="submit" value="Send Review">
-
         </form>
-
     </main>
+
     <footer>
         <p>&copy; <span id="currentyear"></span> | Patricia Niurkiene | Lithuania</p>
         <p id="lastModified"></p>
     </footer>
-
 </body>
 
 </html>
