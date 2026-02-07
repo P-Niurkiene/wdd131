@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="To practice creating forms with well desgined layouts">
+    <meta name="author" content="Patricia Niurkiene">
+    <script src="scripts/form.js" defer></script>
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oldenburg&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Syne&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label>Select Product* <select name="products" required>
+
+                </select>
+            </label>
+
+            <fieldset>
+                <legend>Overall Rating*</legend>
+                <label><input type="radio" name="rating" value="one" required>☆</label>
+                <label><input type="radio" name="rating" value="two" required>☆☆</label>
+                <label><input type="radio" name="rating" value="three" required>☆☆☆</label>
+                <label><input type="radio" name="rating" value="four" required>☆☆☆☆</label>
+                <label><input type="radio" name="rating" value="five" required>☆☆☆☆☆</label>
+            </fieldset>
+
+            <label>Date of Installation*<input type="date" name="date" required></label>
+
+            <fieldset>
+                <legend>Useful Features</legend>
+                <label><input type="checkbox" name="design">Design</label>
+                <label><input type="checkbox" name="durability">Durability</label>
+                <label><input type="checkbox" name="easy">Easy To Use</label>
+                <label><input type="checkbox" name="prefomance">Preformance</label>
+            </fieldset>
+
+            <label>Write Review<textarea name="review" id=""></textarea></label>
+
+
+            <label>Name<input type="text" name="name"></label>
+
+            <input type="submit" value="Send Review">
+
+        </form>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Patricia Niurkiene | Lithuania</p>
+        <p id="lastModified"></p>
+    </footer>
+
+</body>
+
+</html>

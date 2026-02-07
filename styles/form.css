@@ -1,0 +1,123 @@
+:root {
+    font-family: "Raleway", sans-serif;
+    --primary-color: pink;
+    --secondary-color: #333;
+}
+
+header,
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: bolder;
+    padding: 1rem;
+    border: solid 5px var(--secondary-color);
+}
+
+form {
+    display: block;
+    padding: 1rem;
+    max-width: 100%;
+    border: solid 5px var(--primary-color);
+    margin: 1px;
+    color: var(--secondary-color);
+}
+
+fieldset {
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem;
+}
+
+fieldset label {
+    font-weight: normal;
+}
+
+form label {
+    font-weight: bold;
+    font-size: larger;
+}
+
+fieldset label {
+    font-weight: normal;
+    font-size: medium;
+}
+
+legend {
+    font-weight: bolder;
+    margin-left: -1rem;
+    padding-top: 1rem;
+    margin-bottom: -0.5rem;
+    font-size: larger;
+}
+
+label {
+    display: block;
+    padding: 1px;
+    margin: 0.5rem;
+}
+
+select {
+    display: block;
+    gap: 5px;
+    margin: 0.5rem;
+}
+
+div {
+    display: block;
+    margin-left: -1rem;
+}
+
+textarea {
+    padding: 5rem;
+    margin: 0.5rem;
+}
+
+input {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form>label {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--primary-color);
+    width: 100%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+    padding: 10px;
+    margin: 3rem;
+    margin-left: -0.5px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: larger;
+    font-weight: medium;
+    text-align: center;
+    border: var(--secondary-color) solid 2px;
+    padding: 20px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    box-shadow: 5px 5px var(--primary-color);
+
+}
