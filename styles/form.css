@@ -93,7 +93,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #f7b6c8;
+    background-color: var(--primary-color);
 }
 
 main {
@@ -110,7 +110,6 @@ main .message {
     padding: 2rem;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     max-width: 500px;
 }
 
