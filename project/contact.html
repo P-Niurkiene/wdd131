@@ -31,6 +31,57 @@
         </nav>
     </header>
     <main>
+        <h2>Contact Us</h2>
+        <p>Please fill out the form below to send you questions or recieve an outline for a trip.<br>
+            For other questions please reach us contact us:<br>
+            Email: tbyt@gmail.com<br>
+            Phone: +370123456 </p>
+
+        <form action="get" action="cofirmation.html">
+            <fieldset>
+                <legend>
+                    Your Information
+                </legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+                <label>Email* <input type="email" name="email" placeholder="me@gmail.com" required></label>
+                <label>Phone Number <input type="tel" name="pnumber" placeholder="1234567"></label>
+            </fieldset>
+            <fieldset>
+                <Legend>
+                    Trip Selection
+                </Legend>
+                <div>Trips</div>
+                <label><input type="checkbox" name="finland" value="yes">Helsinki, Finland</label>
+                <label><input type="checkbox" name="malta" value="yes">Malta</label>
+                <label><input type="checkbox" name="nz" value="yes">New Zealand</label>
+                <label><input type="checkbox" name="riga" value="yes">Riga, Lativa</label>
+                <label><input type="checkbox" name="estonia" value="yes">Tallinn, Estonia</label>
+                <label><input type="checkbox" name="uk" value="yes">United Kingdom</label>
+                <label><input type="checkbox" name="other" value="yes">Other</label>
+                <div>Other</div>
+                <textarea>If Other has been selected please put more information in the textbox below:</textarea>
+
+            </fieldset>
+            <fieldset>
+                <legend>Trip Deatils</legend>
+                <div>Attendies</div>
+                <label>Number of People<input type="text" name="people" required></label>
+                <div>Budget</div>
+                <label><input type="radio" name="budget" value="onek">up to 1000</label>
+                <label><input type="radio" name="budget" value="threek">1000 - 3000</label>
+                <label><input type="radio" name="budget" value="fivek">3000 - 5000</label>
+                <label><input type="radio" name="budget" value="unlimited">5000 +</label>
+                <div>Length</div>
+                <label><input type="radio" name="budget" value="short">3 to 6 Days</label>
+                <label><input type="radio" name="budget" value="one">7 to 10 Days</label>
+                <label><input type="radio" name="budget" value="two">11 to 14 Days</label>
+                <label><input type="radio" name="budget" value="three">15 + Days</label>
+            </fieldset>
+            <input type="submit" value="Request Trip Plans">o
+
+        </form>
+
 
     </main>
     <footer>
