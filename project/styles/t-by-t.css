@@ -172,7 +172,7 @@ nav a:hover {
 .past {
     text-align: center;
     color: var(--primary-color);
-    text-shadow: 0.1px px 0.1px black;
+    text-shadow: 0.1px 0.1px 0.1px black;
 }
 
 label {
@@ -226,7 +226,7 @@ label {
 .future {
     text-align: center;
     color: var(--primary-color);
-    text-shadow: 0.1px px 0.1px black;
+    text-shadow: 0.1px 0.1px 0.1px black;
 }
 
 .new-trips .trip-card {
@@ -241,7 +241,7 @@ label {
 .form {
     text-align: center;
     color: var(--primary-color);
-    text-shadow: 0.1px px 0.1px #000;
+    text-shadow: 0.1px 0.1px 0.1px #000;
 }
 
 form {
@@ -312,6 +312,23 @@ input[type="submit"]:hover {
     color: var(--secondary-color);
 }
 
+.message {
+    background-color: var(--secondary-color);
+    border: var(--primary-color) solid 3px;
+    color: #000;
+    font-size: 1rem;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+.message a {
+    color: var(--primary-color);
+}
+
+.message a:hover {
+    color: #000;
+}
 
 footer {
     background-color: var(--primary-color);
