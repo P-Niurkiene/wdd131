@@ -123,3 +123,14 @@ if (sortNewMenu) {
 
     sortFutureTrips();
 }
+
+let formVisits = parseInt(localStorage.getItem("formVisits")) || 0;
+
+formVisits++;
+
+localStorage.setItem("formVisits", formVisits);
+
+const message = document.getElementById("visitMessage");
+message.textContent = `You have successfully submitted the form ${formVisits} time${formVisits > 1 ? "s" : ""}.`;
+
+
