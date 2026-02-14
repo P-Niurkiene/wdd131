@@ -34,66 +34,68 @@
         </nav>
     </header>
     <main>
-        <h2>Contact Us</h2>
+        <section class="form">
+            <h2>Contact Us</h2>
 
-        <p>
-            Please fill out the form below to send us your questions or request a trip outline.<br>
-            For other inquiries, you can also reach us at:<br><br>
+            <p>
+                Please fill out the form below to send us your questions or request a trip outline.<br>
+                For other inquiries, you can also reach us at:<br><br>
 
-            <strong>Email:</strong> tbyt@gmail.com<br>
-            <strong>Phone:</strong> +370 123 456
-        </p>
+                <strong>Email:</strong> tbyt@gmail.com<br>
+                <strong>Phone:</strong> +370 123 456
+            </p>
+        </section>
+        <section class="information">
+            <form method="get" action="confirmation.html">
 
-        <form method="get" action="confirmation.html">
+                <fieldset>
+                    <legend>Your Information</legend>
 
-            <fieldset>
-                <legend>Your Information</legend>
+                    <label>First Name* <input type="text" name="fname" required></label>
+                    <label>Last Name* <input type="text" name="lname" required></label>
+                    <label>Email* <input type="email" name="email" placeholder="me@gmail.com" required></label>
+                    <label>Phone Number <input type="tel" name="pnumber" placeholder="+370..."></label>
+                </fieldset>
 
-                <label>First Name* <input type="text" name="fname" required></label>
-                <label>Last Name* <input type="text" name="lname" required></label>
-                <label>Email* <input type="email" name="email" placeholder="me@gmail.com" required></label>
-                <label>Phone Number <input type="tel" name="pnumber" placeholder="+370..."></label>
-            </fieldset>
+                <fieldset>
+                    <legend>Trip Selection</legend>
+                    <label><input type="checkbox" name="turkey"> Alyana, Turkey</label>
+                    <label><input type="checkbox" name="finland"> Helsinki, Finland</label>
+                    <label><input type="checkbox" name="malta"> Malta</label>
+                    <label><input type="checkbox" name="nz"> New Zealand</label>
+                    <label><input type="checkbox" name="riga"> Riga, Latvia</label>
+                    <label><input type="checkbox" name="estonia"> Tallinn, Estonia</label>
+                    <label><input type="checkbox" name="uk"> United Kingdom</label>
+                    <label><input type="checkbox" name="other"> Other</label>
 
-            <fieldset>
-                <legend>Trip Selection</legend>
+                    <textarea name="otherInfo" placeholder="Please provide details here..."></textarea>
+                </fieldset>
 
-                <label><input type="checkbox" name="finland"> Helsinki, Finland</label>
-                <label><input type="checkbox" name="malta"> Malta</label>
-                <label><input type="checkbox" name="nz"> New Zealand</label>
-                <label><input type="checkbox" name="riga"> Riga, Latvia</label>
-                <label><input type="checkbox" name="estonia"> Tallinn, Estonia</label>
-                <label><input type="checkbox" name="uk"> United Kingdom</label>
-                <label><input type="checkbox" name="other"> Other</label>
+                <fieldset>
+                    <legend>Trip Details</legend>
 
-                <textarea name="otherInfo"
-                    placeholder="If you selected other, please provide details here..."></textarea>
-            </fieldset>
+                    <label>Number of People*
+                        <input type="number" name="people" min="1" placeholder="0">
+                    </label>
 
-            <fieldset>
-                <legend>Trip Details</legend>
+                    <p><strong>Budget</strong></p>
+                    <label><input type="radio" name="budget" value="1000"> Up to €1000</label>
+                    <label><input type="radio" name="budget" value="3000"> €1000–€3000</label>
+                    <label><input type="radio" name="budget" value="5000"> €3000–€5000</label>
+                    <label><input type="radio" name="budget" value="unlimited"> €5000+</label>
 
-                <label>Number of People*
-                    <input type="number" name="people" min="1" required>
-                </label>
+                    <p><strong>Trip Length</strong></p>
+                    <label><input type="radio" name="length" value="short"> 3–6 Days</label>
+                    <label><input type="radio" name="length" value="medium"> 7–10 Days</label>
+                    <label><input type="radio" name="length" value="long"> 11–14 Days</label>
+                    <label><input type="radio" name="length" value="extra"> 15+ Days</label>
 
-                <p><strong>Budget</strong></p>
-                <label><input type="radio" name="budget" value="1000"> Up to €1000</label>
-                <label><input type="radio" name="budget" value="3000"> €1000–€3000</label>
-                <label><input type="radio" name="budget" value="5000"> €3000–€5000</label>
-                <label><input type="radio" name="budget" value="unlimited"> €5000+</label>
+                </fieldset>
 
-                <p><strong>Trip Length</strong></p>
-                <label><input type="radio" name="length" value="short"> 3–6 Days</label>
-                <label><input type="radio" name="length" value="medium"> 7–10 Days</label>
-                <label><input type="radio" name="length" value="long"> 11–14 Days</label>
-                <label><input type="radio" name="length" value="extra"> 15+ Days</label>
+                <input type="submit" value="Request Trip Plans">
 
-            </fieldset>
-
-            <input type="submit" value="Request Trip Plans">
-
-        </form>
+            </form>
+        </section>
     </main>
 
     <footer>

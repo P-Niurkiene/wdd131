@@ -175,6 +175,22 @@ nav a:hover {
     text-shadow: 0.1px px 0.1px black;
 }
 
+label {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: larger;
+}
+
+#sortTrips,
+#sortNewTrips {
+    padding: 8px;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 .trips {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -207,6 +223,93 @@ nav a:hover {
     text-align: left;
 }
 
+.future {
+    text-align: center;
+    color: var(--primary-color);
+    text-shadow: 0.1px px 0.1px black;
+}
+
+.new-trips .trip-card {
+    margin: 1rem;
+}
+
+.new-trips .trip-card h3 {
+    color: var(--primary-color);
+    font-weight: 1000;
+}
+
+.form {
+    text-align: center;
+    color: var(--primary-color);
+    text-shadow: 0.1px px 0.1px #000;
+}
+
+form {
+    display: block;
+    background-color: var(--secondary-color);
+    border: #000 solid 1px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+fieldset {
+    display: block;
+    border: none;
+    margin: 1rem;
+
+}
+
+legend {
+    color: var(--primary-color);
+    font-size: larger;
+    font-weight: bold;
+}
+
+.information label {
+    display: block;
+    color: #000;
+    font-weight: lighter;
+    font-size: medium;
+    padding: 5px;
+}
+
+strong {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+
+input[type="submit"] {
+    display: block;
+    background-color: var(--primary-color);
+    color: #f9f9f9;
+    padding: 15px;
+    margin: 20px auto;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 75%;
+}
+
+input[type="submit"]:hover {
+    background-color: #000;
+    color: var(--secondary-color);
+}
 
 
 footer {
