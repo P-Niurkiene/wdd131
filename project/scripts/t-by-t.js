@@ -53,23 +53,22 @@ if (cardsContainer) {
         <p><strong>Purpose:</strong> ${trip.purpose}</p>
       `;
 
-            const button = document.createElement("button");
-            button.textContent = "View Trip Details";
-
             img.addEventListener("click", () => {
                 if (details.style.display === "none") {
                     details.style.display = "block";
-                    button.textContent = "Hide Details";
                 } else {
                     details.style.display = "none";
-                    button.textContent = "View Trip Details";
                 }
             });
 
-            card.append(locationHeading, img, button, details);
+            card.append(locationHeading, img, details);
             cardsContainer.appendChild(card);
         });
     }
 
     displayTrips(trips);
 }
+
+const sortBy = document.querySelector(".trips");
+
+
