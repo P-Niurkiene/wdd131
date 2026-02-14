@@ -1,0 +1,146 @@
+@media (min-width: 750px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        background-color: var(--primary-color);
+    }
+
+    .head {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .head img {
+        width: 150px;
+        height: auto;
+    }
+
+    .head h1 {
+        margin: 0;
+        font-size: 2rem;
+        white-space: nowrap;
+        padding-left: 10rem;
+        font-size: 3rem;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-self: flex-end;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        font-size: 1.7rem;
+        color: var(--secondary-color);
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+    }
+
+    .hero img {
+        display: block;
+        margin: 10px auto;
+        border-radius: 15px;
+        width: 80%;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60rem;
+        height: 30rem;
+        background: rgb(255, 255, 255, 0.4);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5rem;
+        font-size: 1.8rem;
+        color: #000;
+        text-shadow: 1px 1px 10px var(--secondary-color);
+    }
+
+    .quick-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem auto;
+        flex-wrap: wrap;
+    }
+
+    .quick-links div {
+        width: 50.5rem;
+        height: 50.5rem;
+        border-radius: 50%;
+        background-color: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 1.5rem;
+        border: 2px solid var(--primary-color);
+        box-sizing: border-box;
+    }
+
+    .quick-links img {
+        width: 220px;
+        padding: 5px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 15px;
+    }
+
+    .quick-links h2 {
+        margin: 0.5rem 0;
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
+    .quick-links p {
+        font-size: 1.1rem;
+        margin: 0.5rem 0;
+    }
+
+    .quick-links a {
+        font-size: 1.3rem;
+    }
+
+
+    label {
+        padding-left: 40rem;
+    }
+
+    .new-trips .trip-card {
+        width: 40%;
+        margin-left: 45rem;
+    }
+
+    form {
+        width: 80%;
+        padding-left: 1rem;
+        margin-left: 15rem;
+        align-content: center;
+    }
+
+}
